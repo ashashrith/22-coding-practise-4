@@ -21,4 +21,7 @@ Content-Type: application/json
   "playerName": "Maneesh",
   "jerseyNumber": 54,
   "role": "All-rounder"
-}
+} 
+
+###
+DELETE http://localhost:3000/players/:playerId/
