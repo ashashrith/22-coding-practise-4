@@ -70,7 +70,7 @@ app.get("/players/:playerId/", async (request, response) => {
 app.delete("/players/:playerId/", async (request, response) => {
   const { playerId } = request.params;
   const deletePlayer = `
-    SELECT * FROM cricket_team WHERE player_id = ${playerId};`;
+    DELETE FROM cricket_team WHERE player_id = ${playerId};`;
   await db.run(deletePlayer);
   response.send("Player Removed");
 });
